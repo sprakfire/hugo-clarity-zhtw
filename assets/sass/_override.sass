@@ -1,6 +1,6 @@
 // 覆寫 clarity 主題的 _variables.sass
-// 繁體中文字體疊字集，參考 https://iclab.ichentsai.tw/compute-war/
-// Metropolis 保留給英數字元使用，中文則交由作業系統內建的高品質字體渲染，
-// 不需額外下載中文網頁字型（檔案通常高達數 MB），有利於載入效能。
+// 繁體中文字體：改用 Google Fonts 的 Noto Sans TC（於 layouts/partials/hooks/head-end.html 載入），
+// 確保所有平台上的中文顯示一致、字重完整；PingFang TC / Microsoft JhengHei
+// 僅作為字型尚未載入完成前的系統字體後備。Metropolis 保留給英數字元使用。
 html
-  --font: Metropolis, -apple-system, BlinkMacSystemFont, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif
+  --font: Metropolis, "Noto Sans TC", -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", sans-serif
