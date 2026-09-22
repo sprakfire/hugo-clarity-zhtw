@@ -1,0 +1,27 @@
+# 將 `baseurl` 設為您的根網域
+# 若設為 "/"，分享圖示在正式環境將無法正常運作
+baseurl = "https://sprakfire.github.io/hugo-clarity-zhtw/" # 請保留結尾的斜線
+# title = "Clarity"  # 請直接於 config/_default/languages.toml 編輯標題
+copyright = "Steve Francia 及 Hugo 作者群"
+# canonifyurls = true
+
+theme = "hugo-clarity"
+disqusShortname = ""
+
+DefaultContentLanguage = "zh-tw"
+# [languages]
+# config/_default/languages.toml
+
+# [menus]
+# config/_default/menus/menu.xx.toml
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[pagination]
+pagerSize = 10
